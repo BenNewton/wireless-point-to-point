@@ -5,5 +5,13 @@ specified.
 
 Based off of ns-3.26 
 
-To use, create a new module in ns-3 called wireless-point-to-point and then 
-copy the contents into that new model directory. 
+To use, clone the contents into the ns-3.26/src directory
+
+Like this:
+cd ns-3.26/src
+git clone https://github.com/BenNewton/wireless-point-to-point.git
+cd ..
+./waf configure --enable-examples
+./waf --run=wireless-point-to-point-example
+
+
